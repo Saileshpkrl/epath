@@ -1,0 +1,2051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Path Online Consultancy - Your Gateway to Global Education</title>
+    <meta name="description" content="Transform your future with global education. Expert guidance for studying abroad with comprehensive support for university applications, visa consultation, and test preparation.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="hero-cards-styles.css">
+    <link rel="stylesheet" href="review-center-styles.css">
+    <link rel="icon" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo%20%282%29-wCr8vBjejzOKn0UUDV608gDbRl8rFa.png" type="image/png">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="logo-animation">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo%20%282%29-wCr8vBjejzOKn0UUDV608gDbRl8rFa.png" alt="E Path Logo" class="loading-logo">
+                <h1 class="loading-title">E Path Online Consultancy</h1>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="loading-text">Preparing your gateway to global education...</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo%20%282%29-wCr8vBjejzOKn0UUDV608gDbRl8rFa.png" alt="E Path Logo" class="nav-logo">
+                <div class="brand-info">
+                    <span class="brand-name">E Path</span>
+                    <span class="brand-tagline">Global Education</span>
+                </div>
+            </div>
+            
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#services" class="nav-link"><i class="fas fa-cogs"></i> Services</a></li>
+                <li><a href="#countries" class="nav-link"><i class="fas fa-globe"></i> Countries</a></li>
+                <li><a href="#universities" class="nav-link"><i class="fas fa-university"></i> Universities</a></li>
+                <li><a href="#counselors" class="nav-link"><i class="fas fa-users"></i> Team</a></li>
+                <li><a href="#testimonials" class="nav-link"><i class="fas fa-quote-left"></i> Success Stories</a></li>
+                <li><a href="#news" class="nav-link"><i class="fas fa-newspaper"></i> News</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button onclick="openReviewCenter()" class="btn-chat">
+                    <i class="fas fa-star"></i>
+                    <span>Reviews</span>
+                </button>
+                <button onclick="openLiveChat()" class="btn-chat">
+                    <i class="fas fa-comments"></i>
+                    <span>Chat</span>
+                </button>
+                <button id="loginBtn" onclick="openLogin()" class="btn-secondary">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Login
+                </button>
+                <button id="dashboardBtn" onclick="openDashboard()" class="btn-secondary" style="display: none;">
+                    <i class="fas fa-tachometer-alt"></i>
+                    Dashboard
+                </button>
+                <button onclick="openRegister()" class="btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Apply
+                </button>
+                <button id="logoutBtn" onclick="logout()" class="btn-secondary" style="display: none;">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Logout
+                </button>
+            </div>
+            
+            <div id="hamburger" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        
+        <div class="container">
+            <div class="hero-content-single">
+                <div class="hero-text-center">
+                    <div class="hero-badge">
+                        <i class="fas fa-star"></i>
+                        <span>Nepal's #1 Education Consultancy</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h1 class="hero-title">
+                        Transform Your Future with 
+                        <span class="gradient-text">Global Education</span>
+                        <span class="title-decoration">✈️🎓🌍</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Your trusted partner for studying abroad. Expert guidance, comprehensive support, 
+                        and personalized counseling to make your international education dreams come true.
+                    </p>
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>800+ Students Successfully Placed</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>97% Visa Success Rate</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>500+ Partner Universities</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <button onclick="openRegister()" class="btn-primary btn-large">
+                            <i class="fas fa-rocket"></i>
+                            <span>Start Your Journey</span>
+                            <div class="btn-glow"></div>
+                        </button>
+                        <button onclick="openLiveChat()" class="btn-secondary btn-large">
+                            <i class="fas fa-comments"></i>
+                            <span>Free Consultation</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Enhanced Stats Section -->
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="counter" data-target="500">0</h3>
+                        <p>Partner Universities</p>
+                        <div class="stat-bar">
+                            <div class="stat-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="counter" data-target="25">0</h3>
+                        <p>Countries</p>
+                        <div class="stat-bar">
+                            <div class="stat-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="counter" data-target="800">0</h3>
+                        <p>Students Placed</p>
+                        <div class="stat-bar">
+                            <div class="stat-fill" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="counter" data-target="97">0</h3>
+                        <p>Success Rate %</p>
+                        <div class="stat-bar">
+                            <div class="stat-fill" style="width: 97%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info Cards Section -->
+    <section class="quick-info">
+        <div class="container">
+            <div class="quick-info-grid">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Quick Process</h3>
+                        <p>Get started in just 2 minutes with our streamlined application process</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>100% Secure</h3>
+                        <p>Your personal information is protected with bank-level security</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>24/7 Support</h3>
+                        <p>Our expert counselors are available round the clock to help you</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Proven Success</h3>
+                        <p>97% visa success rate with over 800 students placed globally</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-cogs"></i>
+                    <span>Our Services</span>
+                </div>
+                <h2>Study Abroad Services</h2>
+                <p>Complete support for your international education journey</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="service-badge">Popular</div>
+                    </div>
+                    <div class="service-content">
+                        <h3>University Selection</h3>
+                        <p>Expert guidance to choose the perfect university matching your goals and budget.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> University matching</li>
+                            <li><i class="fas fa-check"></i> Application assistance</li>
+                            <li><i class="fas fa-check"></i> Document preparation</li>
+                        </ul>
+                        <div class="service-stats">
+                            <div class="stat">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Universities</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">95%</span>
+                                <span class="stat-label">Success</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-passport"></i>
+                        </div>
+                        <div class="service-badge">97% Success</div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Visa Consultation</h3>
+                        <p>Complete visa support with documentation and interview preparation.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Document preparation</li>
+                            <li><i class="fas fa-check"></i> Interview coaching</li>
+                            <li><i class="fas fa-check"></i> Application tracking</li>
+                        </ul>
+                        <div class="service-stats">
+                            <div class="stat">
+                                <span class="stat-number">600+</span>
+                                <span class="stat-label">Visas</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">97%</span>
+                                <span class="stat-label">Approval</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-spell-check"></i>
+                        </div>
+                        <div class="service-badge">Expert Training</div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Test Preparation</h3>
+                        <p>IELTS & PTE preparation with proven strategies for target scores.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Personalized plans</li>
+                            <li><i class="fas fa-check"></i> Mock tests</li>
+                            <li><i class="fas fa-check"></i> Expert trainers</li>
+                        </ul>
+                        <div class="service-stats">
+                            <div class="stat">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Students</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">8.2</span>
+                                <span class="stat-label">Avg Score</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Steps Section -->
+    <section class="process-steps">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-route"></i>
+                    <span>Our Process</span>
+                </div>
+                <h2>Your Journey to Success</h2>
+                <p>Simple steps to achieve your study abroad dreams</p>
+            </div>
+            
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Free Consultation</h3>
+                        <p>Meet with our expert counselors to discuss your goals and preferences</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>University Selection</h3>
+                        <p>Choose from our 500+ partner universities based on your profile</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Application Process</h3>
+                        <p>Complete application with our guidance and document support</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Visa Processing</h3>
+                        <p>Expert visa consultation with 97% success rate</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Pre-Departure</h3>
+                        <p>Complete preparation for your journey abroad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countries Section -->
+    <section id="countries" class="countries">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-globe"></i>
+                    <span>Study Destinations</span>
+                </div>
+                <h2>Top Study Destinations</h2>
+                <p>Best countries for international education</p>
+            </div>
+            
+            <div class="countries-grid">
+                <div class="country-card" onclick="openCountryModal('usa')">
+                    <div class="country-header">
+                        <div class="country-flag">🇺🇸</div>
+                        <div class="country-badge">Most Popular</div>
+                    </div>
+                    <div class="country-content">
+                        <h3>United States</h3>
+                        <p>World's top universities with excellent career prospects.</p>
+                        <div class="country-features">
+                            <div class="feature">
+                                <i class="fas fa-university"></i>
+                                <span>150+ Universities</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <span>200+ Students Placed</span>
+                            </div>
+                        </div>
+                        <div class="country-stats">
+                            <div class="stat">
+                                <span class="stat-number">95%</span>
+                                <span class="stat-label">Visa Success</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">$80K</span>
+                                <span class="stat-label">Avg. Salary</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="country-card" onclick="openCountryModal('canada')">
+                    <div class="country-header">
+                        <div class="country-flag">🇨🇦</div>
+                        <div class="country-badge">PR Pathway</div>
+                    </div>
+                    <div class="country-content">
+                        <h3>Canada</h3>
+                        <p>Quality education with clear pathway to permanent residency.</p>
+                        <div class="country-features">
+                            <div class="feature">
+                                <i class="fas fa-university"></i>
+                                <span>100+ Universities</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-home"></i>
+                                <span>PR Opportunities</span>
+                            </div>
+                        </div>
+                        <div class="country-stats">
+                            <div class="stat">
+                                <span class="stat-number">98%</span>
+                                <span class="stat-label">Visa Success</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">3 Years</span>
+                                <span class="stat-label">Work Permit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="country-card" onclick="openCountryModal('australia')">
+                    <div class="country-header">
+                        <div class="country-flag">🇦🇺</div>
+                        <div class="country-badge">Great Lifestyle</div>
+                    </div>
+                    <div class="country-content">
+                        <h3>Australia</h3>
+                        <p>Excellent education with beautiful landscapes and work rights.</p>
+                        <div class="country-features">
+                            <div class="feature">
+                                <i class="fas fa-university"></i>
+                                <span>80+ Universities</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Work Rights</span>
+                            </div>
+                        </div>
+                        <div class="country-stats">
+                            <div class="stat">
+                                <span class="stat-number">96%</span>
+                                <span class="stat-label">Visa Success</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">20 hrs</span>
+                                <span class="stat-label">Work/Week</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="country-card" onclick="openCountryModal('uk')">
+                    <div class="country-header">
+                        <div class="country-flag">🇬🇧</div>
+                        <div class="country-badge">Historic</div>
+                    </div>
+                    <div class="country-content">
+                        <h3>United Kingdom</h3>
+                        <p>Historic universities with shorter course durations.</p>
+                        <div class="country-features">
+                            <div class="feature">
+                                <i class="fas fa-university"></i>
+                                <span>70+ Universities</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-clock"></i>
+                                <span>Shorter Courses</span>
+                            </div>
+                        </div>
+                        <div class="country-stats">
+                            <div class="stat">
+                                <span class="stat-number">94%</span>
+                                <span class="stat-label">Visa Success</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">1 Year</span>
+                                <span class="stat-label">Masters</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Universities Section -->
+    <section id="universities" class="universities">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-university"></i>
+                    <span>Partner Universities</span>
+                </div>
+                <h2>Top-Ranked Universities Worldwide</h2>
+                <p>We work with prestigious universities across the globe to provide you the best opportunities</p>
+            </div>
+            
+            <div class="university-tabs">
+                <button class="uni-tab active" onclick="showUniversities('usa')">
+                    <span>🇺🇸</span>
+                    <span>USA</span>
+                </button>
+                <button class="uni-tab" onclick="showUniversities('canada')">
+                    <span>🇨🇦</span>
+                    <span>Canada</span>
+                </button>
+                <button class="uni-tab" onclick="showUniversities('australia')">
+                    <span>🇦🇺</span>
+                    <span>Australia</span>
+                </button>
+                <button class="uni-tab" onclick="showUniversities('uk')">
+                    <span>🇬🇧</span>
+                    <span>UK</span>
+                </button>
+            </div>
+            
+            <div id="usa-unis" class="universities-grid active">
+                <div class="university-card" onclick="openUniversityModal('harvard')">
+                    <div class="university-header">
+                        <div class="university-logo">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="university-rank">#1 Global</div>
+                    </div>
+                    <div class="university-content">
+                        <h3>Harvard University</h3>
+                        <p class="university-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Cambridge, Massachusetts
+                        </p>
+                        <div class="university-features">
+                            <span class="feature-tag">Ivy League</span>
+                            <span class="feature-tag">Research Excellence</span>
+                            <span class="feature-tag">Top Faculty</span>
+                        </div>
+                        <div class="university-stats">
+                            <div class="stat">
+                                <span class="stat-label">Acceptance Rate</span>
+                                <span class="stat-value">3.4%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Students</span>
+                                <span class="stat-value">23,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="university-card" onclick="openUniversityModal('stanford')">
+                    <div class="university-header">
+                        <div class="university-logo">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="university-rank">#2 Global</div>
+                    </div>
+                    <div class="university-content">
+                        <h3>Stanford University</h3>
+                        <p class="university-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Stanford, California
+                        </p>
+                        <div class="university-features">
+                            <span class="feature-tag">Innovation Hub</span>
+                            <span class="feature-tag">Silicon Valley</span>
+                            <span class="feature-tag">Entrepreneurship</span>
+                        </div>
+                        <div class="university-stats">
+                            <div class="stat">
+                                <span class="stat-label">Acceptance Rate</span>
+                                <span class="stat-value">3.9%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Students</span>
+                                <span class="stat-value">17,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="university-card" onclick="openUniversityModal('mit')">
+                    <div class="university-header">
+                        <div class="university-logo">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="university-rank">#3 Global</div>
+                    </div>
+                    <div class="university-content">
+                        <h3>MIT</h3>
+                        <p class="university-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Cambridge, Massachusetts
+                        </p>
+                        <div class="university-features">
+                            <span class="feature-tag">Technology Leader</span>
+                            <span class="feature-tag">STEM Excellence</span>
+                            <span class="feature-tag">Innovation</span>
+                        </div>
+                        <div class="university-stats">
+                            <div class="stat">
+                                <span class="stat-label">Acceptance Rate</span>
+                                <span class="stat-value">4.1%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Students</span>
+                                <span class="stat-value">11,500</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="canada-unis" class="universities-grid">
+                <div class="university-card" onclick="openUniversityModal('toronto')">
+                    <div class="university-header">
+                        <div class="university-logo">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="university-rank">#1 Canada</div>
+                    </div>
+                    <div class="university-content">
+                        <h3>University of Toronto</h3>
+                        <p class="university-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Toronto, Ontario
+                        </p>
+                        <div class="university-features">
+                            <span class="feature-tag">Research Intensive</span>
+                            <span class="feature-tag">Diverse Programs</span>
+                            <span class="feature-tag">Global Recognition</span>
+                        </div>
+                        <div class="university-stats">
+                            <div class="stat">
+                                <span class="stat-label">Students</span>
+                                <span class="stat-value">97,000</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Programs</span>
+                                <span class="stat-value">700+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="university-card" onclick="openUniversityModal('mcgill')">
+                    <div class="university-header">
+                        <div class="university-logo">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="university-rank">#2 Canada</div>
+                    </div>
+                    <div class="university-content">
+                        <h3>McGill University</h3>
+                        <p class="university-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Montreal, Quebec
+                        </p>
+                        <div class="university-features">
+                            <span class="feature-tag">Medical Excellence</span>
+                            <span class="feature-tag">Bilingual City</span>
+                            <span class="feature-tag">Historic Campus</span>
+                        </div>
+                        <div class="university-stats">
+                            <div class="stat">
+                                <span class="stat-label">Students</span>
+                                <span class="stat-value">40,000</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">International</span>
+                                <span class="stat-value">30%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="university-card" onclick="openUniversityModal('ubc')">
+                    <div class="university-header">
+                        <div class="university-logo">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="university-rank">#3 Canada</div>
+                    </div>
+                    <div class="university-content">
+                        <h3>UBC</h3>
+                        <p class="university-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Vancouver, BC
+                        </p>
+                        <div class="university-features">
+                            <span class="feature-tag">Beautiful Campus</span>
+                            <span class="feature-tag">Research Hub</span>
+                            <span class="feature-tag">Pacific Location</span>
+                        </div>
+                        <div class="university-stats">
+                            <div class="stat">
+                                <span class="stat-label">Students</span>
+                                <span class="stat-value">65,000</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Research</span>
+                                <span class="stat-value">Top 40</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="australia-unis" class="universities-grid">
+                <div class="university-card" onclick="openUniversityModal('melbourne')">
+                    <div class="university-header">
+                        <div class="university-logo">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="university-rank">#1 Australia</div>
+                    </div>
+                    <div class="university-content">
+                        <h3>University of Melbourne</h3>
+                        <p class="university-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Melbourne, Victoria
+                        </p>
+                        <div class="university-features">
+                            <span class="feature-tag">Group of Eight</span>
+                            <span class="feature-tag">Cultural Hub</span>
+                            <span class="feature-tag">Research Excellence</span>
+                        </div>
+                        <div class="university-stats">
+                            <div class="stat">
+                                <span class="stat-label">Students</span>
+                                <span class="stat-value">50,000</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">International</span>
+                                <span class="stat-value">45%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="university-card" onclick="openUniversityModal('anu')">
+                    <div class="university-header">
+                        <div class="university-logo">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="university-rank">#2 Australia</div>
+                    </div>
+                    <div class="university-content">
+                        <h3>Australian National University</h3>
+                        <p class="university-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Canberra, ACT
+                        </p>
+                        <div class="university-features">
+                            <span class="feature-tag">Capital City</span>
+                            <span class="feature-tag">Policy Focus</span>
+                            <span class="feature-tag">Research Leader</span>
+                        </div>
+                        <div class="university-stats">
+                            <div class="stat">
+                                <span class="stat-label">Students</span>
+                                <span class="stat-value">25,000</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Nobel Laureates</span>
+                                <span class="stat-value">6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="university-card" onclick="openUniversityModal('sydney')">
+                    <div class="university-header">
+                        <div class="university-logo">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="university-rank">#3 Australia</div>
+                    </div>
+                    <div class="university-content">
+                        <h3>University of Sydney</h3>
+                        <p class="university-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Sydney, NSW
+                        </p>
+                        <div class="university-features">
+                            <span class="feature-tag">Historic Campus</span>
+                            <span class="feature-tag">Harbor City</span>
+                            <span class="feature-tag">Alumni Network</span>
+                        </div>
+                        <div class="university-stats">
+                            <div class="stat">
+                                <span class="stat-label">Students</span>
+                                <span class="stat-value">70,000</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Founded</span>
+                                <span class="stat-value">1850</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="uk-unis" class="universities-grid">
+                <div class="university-card" onclick="openUniversityModal('oxford')">
+                    <div class="university-header">
+                        <div class="university-logo">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="university-rank">#1 UK</div>
+                    </div>
+                    <div class="university-content">
+                        <h3>University of Oxford</h3>
+                        <p class="university-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Oxford, England
+                        </p>
+                        <div class="university-features">
+                            <span class="feature-tag">Ancient University</span>
+                            <span class="feature-tag">Tutorial System</span>
+                            <span class="feature-tag">World Leaders</span>
+                        </div>
+                        <div class="university-stats">
+                            <div class="stat">
+                                <span class="stat-label">Students</span>
+                                <span class="stat-value">24,000</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Founded</span>
+                                <span class="stat-value">1096</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="university-card" onclick="openUniversityModal('cambridge')">
+                    <div class="university-header">
+                        <div class="university-logo">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="university-rank">#2 UK</div>
+                    </div>
+                    <div class="university-content">
+                        <h3>University of Cambridge</h3>
+                        <p class="university-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Cambridge, England
+                        </p>
+                        <div class="university-features">
+                            <span class="feature-tag">Collegiate System</span>
+                            <span class="feature-tag">Scientific Excellence</span>
+                            <span class="feature-tag">Innovation Hub</span>
+                        </div>
+                        <div class="university-stats">
+                            <div class="stat">
+                                <span class="stat-label">Students</span>
+                                <span class="stat-value">23,000</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Nobel Prizes</span>
+                                <span class="stat-value">121</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="university-card" onclick="openUniversityModal('imperial')">
+                    <div class="university-header">
+                        <div class="university-logo">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="university-rank">#3 UK</div>
+                    </div>
+                    <div class="university-content">
+                        <h3>Imperial College London</h3>
+                        <p class="university-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            London, England
+                        </p>
+                        <div class="university-features">
+                            <span class="feature-tag">STEM Focus</span>
+                            <span class="feature-tag">London Location</span>
+                            <span class="feature-tag">Industry Links</span>
+                        </div>
+                        <div class="university-stats">
+                            <div class="stat">
+                                <span class="stat-label">Students</span>
+                                <span class="stat-value">19,000</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Research Quality</span>
+                                <span class="stat-value">Top 10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counselors Section -->
+    <section id="counselors" class="counselors">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-users"></i>
+                    <span>Expert Team</span>
+                </div>
+                <h2>Meet Our Expert Counselors</h2>
+                <p>Experienced professionals dedicated to your success</p>
+            </div>
+            
+            <div class="counselors-grid">
+                <div class="counselor-card featured">
+                    <div class="counselor-header">
+                        <div class="counselor-image">
+                            <i class="fas fa-user-tie"></i>
+                            <div class="online-indicator"></div>
+                        </div>
+                        <div class="counselor-badge">Founder</div>
+                    </div>
+                    <div class="counselor-content">
+                        <h3>PRATIK</h3>
+                        <p class="counselor-title">Senior Consultant & Founder</p>
+                        <p class="counselor-experience">
+                            <i class="fas fa-calendar-alt"></i>
+                            8+ Years Experience
+                        </p>
+                        <div class="counselor-specialties">
+                            <span class="specialty">University Selection</span>
+                            <span class="specialty">Career Guidance</span>
+                        </div>
+                        <div class="counselor-stats">
+                            <div class="stat">
+                                <span class="stat-number">800+</span>
+                                <span class="stat-label">Students</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">95%</span>
+                                <span class="stat-label">Success</span>
+                            </div>
+                        </div>
+                        <div class="counselor-actions">
+                            <button onclick="requestHumanChat('Pratik')" class="btn-primary">
+                                <i class="fas fa-comments"></i>
+                                Chat Now
+                            </button>
+                            <button onclick="openReviewCenter('counselor', 'Pratik')" class="btn-secondary">
+                                <i class="fas fa-star"></i>
+                                Reviews
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="counselor-card">
+                    <div class="counselor-header">
+                        <div class="counselor-image">
+                            <i class="fas fa-user-graduate"></i>
+                            <div class="online-indicator"></div>
+                        </div>
+                        <div class="counselor-badge">Test Expert</div>
+                    </div>
+                    <div class="counselor-content">
+                        <h3>SUBHA SAUBHAGYA</h3>
+                        <p class="counselor-title">Test Preparation Expert</p>
+                        <p class="counselor-experience">
+                            <i class="fas fa-calendar-alt"></i>
+                            5+ Years Experience
+                        </p>
+                        <div class="counselor-specialties">
+                            <span class="specialty">IELTS Coaching</span>
+                            <span class="specialty">PTE Training</span>
+                        </div>
+                        <div class="counselor-stats">
+                            <div class="stat">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Students</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">8.2</span>
+                                <span class="stat-label">Avg Score</span>
+                            </div>
+                        </div>
+                        <div class="counselor-actions">
+                            <button onclick="requestHumanChat('Subha')" class="btn-primary">
+                                <i class="fas fa-comments"></i>
+                                Chat Now
+                            </button>
+                            <button onclick="openReviewCenter('counselor', 'Subha')" class="btn-secondary">
+                                <i class="fas fa-star"></i>
+                                Reviews
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="counselor-card">
+                    <div class="counselor-header">
+                        <div class="counselor-image">
+                            <i class="fas fa-laptop-code"></i>
+                            <div class="online-indicator"></div>
+                        </div>
+                        <div class="counselor-badge">IT Expert</div>
+                    </div>
+                    <div class="counselor-content">
+                        <h3>RAJESH KUMAR</h3>
+                        <p class="counselor-title">IT Consultant & Tech Specialist</p>
+                        <p class="counselor-experience">
+                            <i class="fas fa-calendar-alt"></i>
+                            7+ Years Experience
+                        </p>
+                        <div class="counselor-specialties">
+                            <span class="specialty">Computer Science</span>
+                            <span class="specialty">Data Science</span>
+                        </div>
+                        <div class="counselor-stats">
+                            <div class="stat">
+                                <span class="stat-number">300+</span>
+                                <span class="stat-label">IT Students</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">98%</span>
+                                <span class="stat-label">Job Rate</span>
+                            </div>
+                        </div>
+                        <div class="counselor-actions">
+                            <button onclick="requestHumanChat('Rajesh')" class="btn-primary">
+                                <i class="fas fa-comments"></i>
+                                Chat Now
+                            </button>
+                            <button onclick="openReviewCenter('counselor', 'Rajesh')" class="btn-secondary">
+                                <i class="fas fa-star"></i>
+                                Reviews
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories / Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-quote-left"></i>
+                    <span>Success Stories</span>
+                </div>
+                <h2>What Our Students Say</h2>
+                <p>Real experiences from students who achieved their dreams</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="student-avatar">S</div>
+                        <div class="student-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>University of Toronto, Canada</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"E Path made my Canadian dream come true! Their guidance was exceptional from university selection to visa approval. I'm now studying at my dream university with a scholarship!"</p>
+                    </div>
+                    <div class="testimonial-footer">
+                        <span class="study-field">Computer Science</span>
+                        <span class="achievement">Full Scholarship</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="student-avatar">R</div>
+                        <div class="student-info">
+                            <h4>Rajesh Sharma</h4>
+                            <p>Stanford University, USA</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"The team at E Path is incredibly professional. They helped me get into Stanford with their expert guidance. The visa process was smooth and stress-free!"</p>
+                    </div>
+                    <div class="testimonial-footer">
+                        <span class="study-field">MBA</span>
+                        <span class="achievement">F1 Visa Approved</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="student-avatar">P</div>
+                        <div class="student-info">
+                            <h4>Priya Patel</h4>
+                            <p>University of Melbourne, Australia</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Amazing support throughout my journey! From IELTS preparation to university admission, E Path was with me every step. Now I'm living my Australian dream!"</p>
+                    </div>
+                    <div class="testimonial-footer">
+                        <span class="study-field">Engineering</span>
+                        <span class="achievement">Student Visa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-newspaper"></i>
+                    <span>Latest Updates</span>
+                </div>
+                <h2>News & Updates</h2>
+                <p>Stay informed with latest developments in international education</p>
+            </div>
+            
+            <div class="news-grid">
+                <div class="news-card featured">
+                    <div class="news-header">
+                        <div class="news-image">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="news-badge">Featured</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">
+                                <i class="fas fa-calendar"></i>
+                                Dec 15, 2024
+                            </span>
+                            <span class="news-category">Scholarships</span>
+                        </div>
+                        <h3>New Scholarship Opportunities 2025</h3>
+                        <p>Universities announce new scholarship programs covering up to 100% tuition fees for international students.</p>
+                        <div class="news-tags">
+                            <span class="tag">Scholarships</span>
+                            <span class="tag">2025 Intake</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-card">
+                    <div class="news-header">
+                        <div class="news-image">
+                            <i class="fas fa-spell-check"></i>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">
+                                <i class="fas fa-calendar"></i>
+                                Dec 10, 2024
+                            </span>
+                            <span class="news-category">Test Prep</span>
+                        </div>
+                        <h3>IELTS Test Format Updates</h3>
+                        <p>Important changes to IELTS test format for 2025 that students should know about.</p>
+                        <div class="news-tags">
+                            <span class="tag">IELTS</span>
+                            <span class="tag">Updates</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-card">
+                    <div class="news-header">
+                        <div class="news-image">
+                            <i class="fas fa-passport"></i>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">
+                                <i class="fas fa-calendar"></i>
+                                Dec 5, 2024
+                            </span>
+                            <span class="news-category">Immigration</span>
+                        </div>
+                        <h3>Canada Visa Processing Updates</h3>
+                        <p>Latest updates on Canada student visa processing times and new requirements.</p>
+                        <div class="news-tags">
+                            <span class="tag">Canada</span>
+                            <span class="tag">Visa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo%20%282%29-wCr8vBjejzOKn0UUDV608gDbRl8rFa.png" alt="E Path Logo" class="footer-logo">
+                        <div class="brand-info">
+                            <h3>E Path Online Consultancy</h3>
+                            <p class="brand-tagline">Your Gateway to Global Education</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted partner for international education. We help students achieve their dreams of studying abroad 
+                        with expert guidance, comprehensive support, and personalized counseling services.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#countries">Study Destinations</a></li>
+                        <li><a href="#universities">Partner Universities</a></li>
+                        <li><a href="#counselors">Our Team</a></li>
+                        <li><a href="#news">News & Updates</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">University Selection</a></li>
+                        <li><a href="#">Visa Consultation</a></li>
+                        <li><a href="#">Test Preparation</a></li>
+                        <li><a href="#">Application Support</a></li>
+                        <li><a href="#">Scholarship Guidance</a></li>
+                        <li><a href="#">Pre-Departure Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Study Destinations</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Study in USA</a></li>
+                        <li><a href="#">Study in Canada</a></li>
+                        <li><a href="#">Study in Australia</a></li>
+                        <li><a href="#">Study in UK</a></li>
+                        <li><a href="#">Study in Germany</a></li>
+                        <li><a href="#">Study in New Zealand</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Address</span>
+                                <span class="contact-value">Putalisadak, Kathmandu, Nepal</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+977-9841234567</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">epathconsultantservice@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">WhatsApp</span>
+                                <span class="contact-value">+977-9841234567</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Newsletter Subscription</h4>
+                    <p class="newsletter-description">
+                        Subscribe to get updates about scholarships, deadlines, and study abroad opportunities
+                    </p>
+                    <div class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" id="newsletterEmail" placeholder="Enter your email address" required>
+                            <button onclick="subscribeNewsletter()" class="btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                    <div class="newsletter-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Weekly scholarship updates</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Application deadlines</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Success stories</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">
+                        &copy; 2024 E Path Online Consultancy. All rights reserved. 
+                        <span class="developer">Designed & Developed with ❤️ by E Path Team</span>
+                    </p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-icon">
+                    <i class="fas fa-sign-in-alt"></i>
+                </div>
+                <h2>Welcome Back!</h2>
+                <p>Sign in to your E Path account</p>
+                <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            </div>
+            <form onsubmit="handleLogin(event)">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="loginEmail">Email Address</label>
+                        <input type="email" id="loginEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" name="password" required>
+                    </div>
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="remember">
+                            <span class="checkmark"></span>
+                            Remember me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Sign In
+                    </button>
+                </div>
+            </form>
+            <div class="modal-footer">
+                <p>Don't have an account? <a href="#" onclick="switchModal('loginModal', 'registerModal')">Create one here</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content register-modal">
+            <div class="modal-header">
+                <div class="modal-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h2>Start Your Journey</h2>
+                <p>Join thousands of successful students</p>
+                <span class="close" onclick="closeModal('registerModal')">&times;</span>
+            </div>
+            <form onsubmit="handleRegister(event)">
+                <div class="modal-body">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Preferred Country *</label>
+                            <select id="country" name="country" required>
+                                <option value="">Select Country</option>
+                                <option value="usa">United States</option>
+                                <option value="canada">Canada</option>
+                                <option value="australia">Australia</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="germany">Germany</option>
+                                <option value="newzealand">New Zealand</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fieldOfStudy">Field of Study</label>
+                            <select id="fieldOfStudy" name="fieldOfStudy">
+                                <option value="">Select Field</option>
+                                <option value="engineering">Engineering</option>
+                                <option value="business">Business</option>
+                                <option value="medicine">Medicine</option>
+                                <option value="computer-science">Computer Science</option>
+                                <option value="arts">Arts & Humanities</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="studyLevel">Study Level</label>
+                            <select id="studyLevel" name="studyLevel">
+                                <option value="">Select Level</option>
+                                <option value="bachelor">Bachelor's</option>
+                                <option value="master">Master's</option>
+                                <option value="phd">PhD</option>
+                                <option value="diploma">Diploma</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password *</label>
+                        <input type="password" id="password" name="password" required minlength="6">
+                    </div>
+                    <div class="form-agreements">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="agreeTerms" required>
+                            <span class="checkmark"></span>
+                            I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="agreeMarketing">
+                            <span class="checkmark"></span>
+                            I would like to receive updates about scholarships and opportunities
+                        </label>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">
+                        <i class="fas fa-rocket"></i>
+                        Start Application
+                    </button>
+                </div>
+            </form>
+            <div class="modal-footer">
+                <p>Already have an account? <a href="#" onclick="switchModal('registerModal', 'loginModal')">Sign in here</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Student Dashboard Modal -->
+    <div id="dashboardModal" class="modal">
+        <div class="modal-content dashboard-modal">
+            <div class="modal-header">
+                <div class="modal-icon">
+                    <i class="fas fa-tachometer-alt"></i>
+                </div>
+                <h2>Student Dashboard</h2>
+                <p id="welcomeMessage">Welcome back!</p>
+                <span class="close" onclick="closeModal('dashboardModal')">&times;</span>
+            </div>
+            <div class="dashboard-content">
+                <div class="dashboard-tabs">
+                    <button class="dashboard-tab active" onclick="showDashboardTab('overview')">
+                        <i class="fas fa-chart-pie"></i>
+                        Overview
+                    </button>
+                    <button class="dashboard-tab" onclick="showDashboardTab('progress')">
+                        <i class="fas fa-tasks"></i>
+                        Progress
+                    </button>
+                    <button class="dashboard-tab" onclick="showDashboardTab('applications')">
+                        <i class="fas fa-file-alt"></i>
+                        Applications
+                    </button>
+                    <button class="dashboard-tab" onclick="showDashboardTab('documents')">
+                        <i class="fas fa-folder"></i>
+                        Documents
+                    </button>
+                </div>
+                
+                <div id="overviewTab" class="dashboard-tab-content active">
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 id="appliedUniversities">0</h3>
+                                <p>Universities Applied</p>
+                            </div>
+                        </div>
+                        <div class="dashboard-stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 id="pendingApplications">0</h3>
+                                <p>Pending Applications</p>
+                            </div>
+                        </div>
+                        <div class="dashboard-stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 id="acceptedApplications">0</h3>
+                                <p>Accepted</p>
+                            </div>
+                        </div>
+                        <div class="dashboard-stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-percentage"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 id="profileCompletion">0%</h3>
+                                <p>Profile Complete</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="recent-activities">
+                        <h3>Recent Activities</h3>
+                        <div id="recentActivitiesList" class="activities-list">
+                            <!-- Activities will be populated here -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="progressTab" class="dashboard-tab-content">
+                    <div class="progress-tracker">
+                        <h3>Your Study Abroad Journey</h3>
+                        <div class="progress-steps">
+                            <div class="progress-step completed" data-step="1">
+                                <div class="step-icon">
+                                    <i class="fas fa-user-plus"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Registration</h4>
+                                    <p>Account created successfully</p>
+                                </div>
+                            </div>
+                            <div class="progress-step" data-step="2">
+                                <div class="step-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Profile Completion</h4>
+                                    <p>Complete your academic profile</p>
+                                </div>
+                            </div>
+                            <div class="progress-step" data-step="3">
+                                <div class="step-icon">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>University Selection</h4>
+                                    <p>Choose your preferred universities</p>
+                                </div>
+                            </div>
+                            <div class="progress-step" data-step="4">
+                                <div class="step-icon">
+                                    <i class="fas fa-paper-plane"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Application Submission</h4>
+                                    <p>Submit your applications</p>
+                                </div>
+                            </div>
+                            <div class="progress-step" data-step="5">
+                                <div class="step-icon">
+                                    <i class="fas fa-passport"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Visa Processing</h4>
+                                    <p>Apply for student visa</p>
+                                </div>
+                            </div>
+                            <div class="progress-step" data-step="6">
+                                <div class="step-icon">
+                                    <i class="fas fa-plane"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Departure</h4>
+                                    <p>Ready to fly!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="applicationsTab" class="dashboard-tab-content">
+                    <div class="applications-section">
+                        <div class="section-header">
+                            <h3>My Applications</h3>
+                            <button onclick="addNewApplication()" class="btn-primary">
+                                <i class="fas fa-plus"></i>
+                                New Application
+                            </button>
+                        </div>
+                        <div id="applicationsList" class="applications-list">
+                            <!-- Applications will be populated here -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="documentsTab" class="dashboard-tab-content">
+                    <div class="documents-section">
+                        <h3>Document Checklist</h3>
+                        <div class="document-checklist">
+                            <div class="document-item">
+                                <div class="document-info">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>Academic Transcripts</span>
+                                </div>
+                                <div class="document-status">
+                                    <input type="checkbox" id="transcripts">
+                                    <label for="transcripts">Uploaded</label>
+                                </div>
+                            </div>
+                            <div class="document-item">
+                                <div class="document-info">
+                                    <i class="fas fa-certificate"></i>
+                                    <span>English Proficiency Test</span>
+                                </div>
+                                <div class="document-status">
+                                    <input type="checkbox" id="englishTest">
+                                    <label for="englishTest">Uploaded</label>
+                                </div>
+                            </div>
+                            <div class="document-item">
+                                <div class="document-info">
+                                    <i class="fas fa-id-card"></i>
+                                    <span>Passport Copy</span>
+                                </div>
+                                <div class="document-status">
+                                    <input type="checkbox" id="passport">
+                                    <label for="passport">Uploaded</label>
+                                </div>
+                            </div>
+                            <div class="document-item">
+                                <div class="document-info">
+                                    <i class="fas fa-file-alt"></i>
+                                    <span>Statement of Purpose</span>
+                                </div>
+                                <div class="document-status">
+                                    <input type="checkbox" id="sop">
+                                    <label for="sop">Uploaded</label>
+                                </div>
+                            </div>
+                            <div class="document-item">
+                                <div class="document-info">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Letters of Recommendation</span>
+                                </div>
+                                <div class="document-status">
+                                    <input type="checkbox" id="lor">
+                                    <label for="lor">Uploaded</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Review Center Modal -->
+    <div id="reviewCenterModal" class="modal review-modal">
+        <div class="modal-content review-modal-content">
+            <div class="modal-header">
+                <div class="modal-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h2>Student Review Center</h2>
+                <p>See what our students say about their experience</p>
+                <span class="close" onclick="closeModal('reviewCenterModal')">&times;</span>
+            </div>
+            
+            <div class="review-center-tabs">
+                <button class="review-tab active" onclick="showReviewTab('all')">
+                    <i class="fas fa-star"></i>
+                    All Reviews
+                </button>
+                <button class="review-tab" onclick="showReviewTab('add')">
+                    <i class="fas fa-plus"></i>
+                    Add Review
+                </button>
+            </div>
+            
+            <!-- All Reviews Tab -->
+            <div id="allReviewsTab" class="review-tab-content active">
+                <div class="reviews-summary">
+                    <div class="overall-rating">
+                        <div class="rating-number">4.9</div>
+                        <div class="rating-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="rating-text">Based on <span id="totalReviews">247</span> reviews</div>
+                    </div>
+                    <div class="rating-breakdown">
+                        <div class="rating-bar">
+                            <span>5 stars</span>
+                            <div class="bar"><div class="fill" style="width: 85%"></div></div>
+                            <span id="fiveStarCount">210</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span>4 stars</span>
+                            <div class="bar"><div class="fill" style="width: 12%"></div></div>
+                            <span id="fourStarCount">29</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span>3 stars</span>
+                            <div class="bar"><div class="fill" style="width: 2%"></div></div>
+                            <span id="threeStarCount">5</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span>2 stars</span>
+                            <div class="bar"><div class="fill" style="width: 1%"></div></div>
+                            <span id="twoStarCount">2</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span>1 star</span>
+                            <div class="bar"><div class="fill" style="width: 0%"></div></div>
+                            <span id="oneStarCount">1</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reviews-list" id="reviewsList">
+                    <!-- Reviews will be populated here -->
+                </div>
+            </div>
+            
+            <!-- Add Review Tab -->
+            <div id="addReviewTab" class="review-tab-content">
+                <form onsubmit="submitReview(event)" class="review-form">
+                    <div class="form-group">
+                        <label for="reviewerName">Your Name *</label>
+                        <input type="text" id="reviewerName" name="reviewerName" required placeholder="Enter your full name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reviewerEmail">Email Address *</label>
+                        <input type="email" id="reviewerEmail" name="reviewerEmail" required placeholder="Enter your email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="studyDestination">Study Destination</label>
+                        <select id="studyDestination" name="studyDestination">
+                            <option value="">Select destination</option>
+                            <option value="USA">United States</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Australia">Australia</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Overall Rating *</label>
+                        <div class="rating-input" id="ratingInput">
+                            <i class="fas fa-star" data-rating="1"></i>
+                            <i class="fas fa-star" data-rating="2"></i>
+                            <i class="fas fa-star" data-rating="3"></i>
+                            <i class="fas fa-star" data-rating="4"></i>
+                            <i class="fas fa-star" data-rating="5"></i>
+                        </div>
+                        <input type="hidden" id="selectedRating" name="rating" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reviewTitle">Review Title *</label>
+                        <input type="text" id="reviewTitle" name="reviewTitle" required placeholder="Summarize your experience">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reviewText">Your Review *</label>
+                        <textarea id="reviewText" name="reviewText" required placeholder="Share your detailed experience with E Path Consultancy..." rows="5"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="agreePublish" required>
+                            <span class="checkmark"></span>
+                            I agree to publish this review publicly and confirm that this review is based on my own experience
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i>
+                        Submit Review
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- University Details Modal -->
+    <div id="universityModal" class="modal">
+        <div class="modal-content university-modal">
+            <div class="modal-header">
+                <div class="modal-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <h2 id="universityModalTitle">University Details</h2>
+                <p id="universityModalLocation">Location</p>
+                <span class="close" onclick="closeModal('universityModal')">&times;</span>
+            </div>
+            <div id="universityModalContent" class="university-details">
+                <!-- University details will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Country Details Modal -->
+    <div id="countryModal" class="modal">
+        <div class="modal-content country-modal">
+            <div class="modal-header">
+                <div class="modal-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h2 id="countryModalTitle">Country Details</h2>
+                <p id="countryModalDescription">Study destination information</p>
+                <span class="close" onclick="closeModal('countryModal')">&times;</span>
+            </div>
+            <div id="countryModalContent" class="country-details">
+                <!-- Country details will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Toggle Button -->
+    <div class="chat-toggle" onclick="openLiveChat()">
+        <div class="chat-icon">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div id="chatNotification" class="chat-notification" style="display: none;">
+            <div class="notification-content">
+                <span class="notification-text">New message!</span>
+                <div class="notification-pulse"></div>
+            </div>
+        </div>
+        <div id="chatStatus" class="chat-status-indicator">
+            <span class="status-dot online"></span>
+            <span class="status-text">Online</span>
+        </div>
+    </div>
+
+    <!-- Chat Widget -->
+    <div id="chatWidget" class="chat-widget">
+        <div class="chat-header">
+            <div class="chat-agent-info">
+                <div id="currentAgentAvatar" class="agent-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="agent-details">
+                    <div id="currentAgentName" class="agent-name">AI Assistant</div>
+                    <div id="currentAgentStatus" class="agent-status">
+                        <span class="status-indicator online"></span>
+                        Online & Ready to Help
+                    </div>
+                </div>
+            </div>
+            <div class="chat-controls">
+                <button onclick="closeLiveChat()" class="chat-control-btn" title="Close Chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="chatMessages" class="chat-messages">
+            <div class="welcome-message">
+                <div class="welcome-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="welcome-content">
+                    <h4>Welcome to E Path Online Consultancy! 👋</h4>
+                    <p>I'm your AI assistant, here to help you with your study abroad journey. How can I assist you today?</p>
+                    <ul>
+                        <li>University selection and applications</li>
+                        <li>Visa consultation and guidance</li>
+                        <li>Test preparation (IELTS/PTE)</li>
+                        <li>Scholarship opportunities</li>
+                        <li>Country-specific information</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-input-container">
+            <div class="input-wrapper">
+                <input type="text" id="chatInput" placeholder="Type your message here..." maxlength="500">
+                <div class="input-actions">
+                    <button onclick="sendMessage()" class="send-btn" title="Send Message">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="input-footer">
+                <span class="character-count">0/500</span>
+                <span class="powered-by">Powered by E Path AI</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Review Pop-up Notifications -->
+    <div id="reviewPopup" class="review-popup">
+        <div class="review-popup-content">
+            <div class="review-popup-header">
+                <div class="popup-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="popup-info">
+                    <div class="popup-name">Recent Review</div>
+                    <div class="popup-time">Just now</div>
+                </div>
+                <button onclick="closeReviewPopup()" class="popup-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="review-popup-body">
+                <div class="popup-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="popup-review-text"></p>
+                <div class="popup-reviewer"></div>
+            </div>
+            <div class="review-popup-footer">
+                <button onclick="openReviewCenter()" class="view-all-btn">View All Reviews</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Container -->
+    <div id="notificationContainer" class="notification-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
